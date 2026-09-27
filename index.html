@@ -6,149 +6,8 @@
         <title>Infografía Interactiva: Formatos de Audio</title>
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
-        <script>
-            tailwind.config = {
-                darkMode: "class",
-                theme: {
-                    extend: {
-                        fontFamily: {
-                            arial: [Arial],
-                            arial: [Arial],
-                        },
-                        colors: {
-                            cyber: {
-                                bg: "#080b14",
-                                card: "#0f172a",
-                                border: "#1e293b",
-                                cyan: "#00f0ff",
-                                purple: "#7000ff",
-                                pink: "#ff007f",
-                                glow: "#00f0ff44",
-                            },
-                        },
-                        boxShadow: {
-                            "neon-cyan": "0 0 15px rgba(0, 240, 255, 0.4), inset 0 0 15px rgba(0, 240, 255, 0.1)",
-                            "neon-purple": "0 0 15px rgba(112, 0, 255, 0.4), inset 0 0 15px rgba(112, 0, 255, 0.1)",
-                            "neon-pink": "0 0 15px rgba(255, 0, 127, 0.4), inset 0 0 15px rgba(255, 0, 127, 0.1)",
-                        },
-                    },
-                },
-            };
-        </script>
-
-        <style>
-            body {
-                min-height: 100vh;
-                background-image:
-                    radial-gradient(circle at 50% 0%, rgba(112, 0, 255, 0.15) 0%, transparent 70%),
-                    radial-gradient(circle at 0% 100%, rgba(0, 240, 255, 0.1) 0%, transparent 50%),
-                    linear-gradient(to bottom, rgba(2, 6, 23, 0.8), rgba(2, 6, 23, 0.95)),
-                    repeating-linear-gradient(
-                        0deg,
-                        transparent,
-                        transparent 2px,
-                        rgba(0, 240, 255, 0.02) 2px,
-                        rgba(0, 240, 255, 0.02) 4px
-                    );
-                background-color: #05070f;
-                color: #e2e8f0;
-                font-family: "arial", sans-serif;
-            }
-
-            /* HUD tech lines background */
-            .hud-grid {
-                background-image:
-                    linear-gradient(to right, rgba(0, 240, 255, 0.03) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(0, 240, 255, 0.03) 1px, transparent 1px);
-                background-size: 40px 40px;
-            }
-
-            /* Custom Scrollbar */
-            ::-webkit-scrollbar {
-                width: 6px;
-                height: 6px;
-            }
-            ::-webkit-scrollbar-track {
-                background: #080b14;
-            }
-            ::-webkit-scrollbar-thumb {
-                border-radius: 3px;
-                background: #00f0ff55;
-            }
-            ::-webkit-scrollbar-thumb:hover {
-                background: #00f0ff;
-            }
-
-            .glow-text-cyan {
-                text-shadow:
-                    0 0 10px rgba(0, 240, 255, 0.7),
-                    0 0 20px rgba(0, 240, 255, 0.4);
-            }
-
-            .glow-text-purple {
-                text-shadow:
-                    0 0 10px rgba(112, 0, 255, 0.7),
-                    0 0 20px rgba(112, 0, 255, 0.4);
-            }
-
-            .hud-card {
-                border: 1px solid rgba(0, 240, 255, 0.2);
-                backdrop-filter: blur(12px);
-                background: rgba(15, 23, 42, 0.65);
-                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            }
-
-            .hud-card:hover {
-                transform: translateY(-2px);
-                border-color: rgba(0, 240, 255, 0.6);
-                box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
-            }
-
-            .hud-card-purple {
-                border-color: rgba(112, 0, 255, 0.3);
-            }
-            .hud-card-purple:hover {
-                border-color: rgba(112, 0, 255, 0.7);
-                box-shadow: 0 0 20px rgba(112, 0, 255, 0.3);
-            }
-
-            .corner-border {
-                position: relative;
-            }
-            .corner-border::before {
-                position: absolute;
-                top: -1px;
-                left: -1px;
-                width: 8px;
-                height: 8px;
-                border-top: 2px solid #00f0ff;
-                border-left: 2px solid #00f0ff;
-                content: "";
-            }
-            .corner-border::after {
-                position: absolute;
-                right: -1px;
-                bottom: -1px;
-                width: 8px;
-                height: 8px;
-                border-right: 2px solid #00f0ff;
-                border-bottom: 2px solid #00f0ff;
-                content: "";
-            }
-
-            @keyframes scanline {
-                0% {
-                    transform: translateY(-100%);
-                }
-                100% {
-                    transform: translateY(1000%);
-                }
-            }
-            .scanline-effect {
-                animation: scanline 8s linear infinite;
-            }
-        </style>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="main.js"></script>
     </head>
     <body class="hud-grid relative overflow-x-hidden p-3 md:p-6 text-slate-200">
         <header class="max-w-7xl mx-auto mb-8 relative z-10">
@@ -161,20 +20,22 @@
                             class="flex items-center gap-2 mb-2 pb-1 border-b border-cyan-500/30 text-cyan-400 font-arial font-semibold"
                         >
                             <i class="fa-solid fa-user-gear"></i>
-                            <span>DATOS DEL ALUMNO</span>
+                            <span>DATOS PERSONALES</span>
                         </div>
                         <div class="space-y-1 text-slate-300">
                             <p class="flex justify-between">
-                                <span class="text-slate-500">Nombre:</span>
-                                <span class="font-medium text-slate-200" contenteditable="true">Estudiante</span>
+                                <span class="text-slate-500">Nombre</span>
+                                <span class="font-medium text-slate-200" contenteditable="true"
+                                    >Juan Martín Rodríguez</span
+                                >
                             </p>
                             <p class="flex justify-between">
-                                <span class="text-slate-500">Matrícula:</span>
-                                <span class="font-medium text-cyan-300" contenteditable="true">#AUD-2026-99</span>
+                                <span class="text-slate-500">Apellido</span>
+                                <span class="font-medium text-cyan-300" contenteditable="true">Curso</span>
                             </p>
                             <p class="flex justify-between">
                                 <span class="text-slate-500">Curso:</span>
-                                <span class="font-medium text-slate-200" contenteditable="true">Sonido Digital II</span>
+                                <span class="font-medium text-slate-200" contenteditable="true">5° B - IPET 424</span>
                             </p>
                         </div>
                     </div>
@@ -195,7 +56,7 @@
                                 FORMATOS DE AUDIO
                             </h1>
                             <p class="text-xs md:text-sm font-arial tracking-widest text-cyan-300 uppercase mt-1">
-                                ESQUEMA INTERACTIVO DE CLASIFICACIÓN TÉCNICA
+                                ESQUEMA INTERACTIVO
                             </p>
                         </div>
                     </div>
@@ -210,22 +71,20 @@
                             class="flex items-center gap-2 mb-2 pb-1 border-b border-purple-500/30 text-purple-400 font-arial font-semibold"
                         >
                             <i class="fa-solid fa-file-waveform"></i>
-                            <span>PRESENTACIÓN</span>
+                            <span>DATOS DEL TRABAJO</span>
                         </div>
                         <div class="space-y-1 text-slate-300">
                             <p class="flex justify-between">
                                 <span class="text-slate-500">Materia:</span>
-                                <span class="font-medium text-slate-200" contenteditable="true"
-                                    >Tecnología de Audio</span
-                                >
+                                <span class="font-medium text-slate-200" contenteditable="true">Informática A. II</span>
                             </p>
                             <p class="flex justify-between">
-                                <span class="text-slate-500">Fecha:</span>
-                                <span class="font-medium text-purple-300" contenteditable="true">2026-09-24</span>
+                                <span class="text-slate-500">Núcleo:</span>
+                                <span class="font-medium text-purple-300" contenteditable="true">Núcleo 5</span>
                             </p>
                             <p class="flex justify-between">
-                                <span class="text-slate-500">Profesor:</span>
-                                <span class="font-medium text-slate-200" contenteditable="true">Cátedra de Sonido</span>
+                                <span class="text-slate-500">Profe:</span>
+                                <span class="font-medium text-slate-200" contenteditable="true">Franco Prigent</span>
                             </p>
                         </div>
                     </div>
