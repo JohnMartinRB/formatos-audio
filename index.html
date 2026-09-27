@@ -25,7 +25,7 @@
                 <div class="lg:col-span-3 order-2 lg:order-1">
                     <div class="hud-card p-3 rounded-lg border-slate-700/60 opacity-90 hover:opacity-100 text-xs">
                         <div
-                            class="flex items-center gap-2 mb-2 pb-1 border-b border-cyan-500/30 text-cyan-400 font-arial font-semibold"
+                            class="flex items-center gap-2 mb-2 pb-1 border-b border-cyan-500/30 text-cyan-400 font-aldrich font-semibold"
                         >
                             <i class="fa-solid fa-user-gear"></i>
                             <span>DATOS PERSONALES</span>
@@ -57,11 +57,11 @@
                             class="relative px-6 py-3 bg-slate-950/80 border border-cyan-500/40 rounded-xl backdrop-blur-md"
                         >
                             <h1
-                                class="font-arial font-black text-2xl md:text-4xl lg:text-5xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-200 to-purple-400 glow-text-cyan"
+                                class="font-aldrich font-black text-2xl md:text-4xl lg:text-5xl tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-200 to-purple-400 glow-text-cyan"
                             >
                                 FORMATOS DE AUDIO
                             </h1>
-                            <p class="text-xs md:text-sm font-arial tracking-widest text-cyan-300 uppercase mt-1">
+                            <p class="text-xs md:text-sm font-aldrich tracking-widest text-cyan-300 uppercase mt-1">
                                 ESQUEMA INTERACTIVO
                             </p>
                         </div>
@@ -74,7 +74,7 @@
                         class="hud-card hud-card-purple p-3 rounded-lg border-slate-700/60 opacity-90 hover:opacity-100 text-xs"
                     >
                         <div
-                            class="flex items-center gap-2 mb-2 pb-1 border-b border-purple-500/30 text-purple-400 font-arial font-semibold"
+                            class="flex items-center gap-2 mb-2 pb-1 border-b border-purple-500/30 text-purple-400 font-aldrich font-semibold"
                         >
                             <i class="fa-solid fa-file-waveform"></i>
                             <span>DATOS DEL TRABAJO</span>
@@ -102,28 +102,28 @@
                 <button
                     onclick="filterCategory('all')"
                     id="tab-all"
-                    class="px-4 py-1.5 rounded-full text-xs font-arial tracking-wider transition-all bg-cyan-500/20 text-cyan-300 border border-cyan-400 shadow-neon-cyan"
+                    class="px-4 py-1.5 rounded-full text-xs font-aldrich tracking-wider transition-all bg-cyan-500/20 text-cyan-300 border border-cyan-400 shadow-neon-cyan"
                 >
                     <i class="fa-solid fa-border-all mr-1"></i> TODOS
                 </button>
                 <button
                     onclick="filterCategory('raw')"
                     id="tab-raw"
-                    class="px-4 py-1.5 rounded-full text-xs font-arial tracking-wider transition-all bg-slate-900/80 text-slate-400 border border-slate-700 hover:border-cyan-500"
+                    class="px-4 py-1.5 rounded-full text-xs font-aldrich tracking-wider transition-all bg-slate-900/80 text-slate-400 border border-slate-700 hover:border-cyan-500"
                 >
                     <i class="fa-solid fa-microchip mr-1 text-cyan-400"></i> SIN COMPRESIÓN
                 </button>
                 <button
                     onclick="filterCategory('lossy')"
                     id="tab-lossy"
-                    class="px-4 py-1.5 rounded-full text-xs font-arial tracking-wider transition-all bg-slate-900/80 text-slate-400 border border-slate-700 hover:border-pink-500"
+                    class="px-4 py-1.5 rounded-full text-xs font-aldrich tracking-wider transition-all bg-slate-900/80 text-slate-400 border border-slate-700 hover:border-pink-500"
                 >
                     <i class="fa-solid fa-compress mr-1 text-pink-400"></i> COMPRESIÓN CON PÉRDIDA
                 </button>
                 <button
                     onclick="filterCategory('lossless')"
                     id="tab-lossless"
-                    class="px-4 py-1.5 rounded-full text-xs font-arial tracking-wider transition-all bg-slate-900/80 text-slate-400 border border-slate-700 hover:border-purple-500"
+                    class="px-4 py-1.5 rounded-full text-xs font-aldrich tracking-wider transition-all bg-slate-900/80 text-slate-400 border border-slate-700 hover:border-purple-500"
                 >
                     <i class="fa-solid fa-shield-halved mr-1 text-purple-400"></i> COMPRESIÓN SIN PÉRDIDA
                 </button>
@@ -142,13 +142,15 @@
                     <!-- Section Header -->
                     <div class="mb-5 border-b border-cyan-500/30 pb-3">
                         <div class="flex items-center justify-between">
-                            <span class="text-xs font-arial text-cyan-400 tracking-widest uppercase">Categoría 01</span>
+                            <span class="text-xs font-aldrich text-cyan-400 tracking-widest uppercase"
+                                >Categoría 01</span
+                            >
                             <span
-                                class="px-2 py-0.5 text-[10px] font-arial bg-cyan-950 text-cyan-300 border border-cyan-500/40 rounded"
+                                class="px-2 py-0.5 text-[10px] font-aldrich bg-cyan-950 text-cyan-300 border border-cyan-500/40 rounded"
                                 >RAW / PCM</span
                             >
                         </div>
-                        <h2 class="font-arial text-xl font-bold text-slate-100 mt-1 flex items-center gap-2">
+                        <h2 class="font-aldrich text-xl font-bold text-slate-100 mt-1 flex items-center gap-2">
                             <i class="fa-solid fa-wave-square text-cyan-400"></i>
                             SIN COMPRESIÓN
                         </h2>
@@ -158,7 +160,7 @@
                         </p>
                         <button
                             onclick="openCategoryModal('raw')"
-                            class="mt-3 text-xs font-arial text-cyan-400 hover:text-cyan-200 flex items-center gap-1 transition-all"
+                            class="mt-3 text-xs font-aldrich text-cyan-400 hover:text-cyan-200 flex items-center gap-1 transition-all"
                         >
                             <span>Ver teoría y características</span>
                             <i class="fa-solid fa-circle-arrow-right text-xs"></i>
@@ -167,7 +169,7 @@
 
                     <!-- Animated Waveform Visual Canvas -->
                     <div class="bg-slate-950/80 rounded-xl p-3 border border-slate-800 mb-5 relative overflow-hidden">
-                        <div class="text-[10px] font-arial text-cyan-400/70 mb-1 flex justify-between">
+                        <div class="text-[10px] font-aldrich text-cyan-400/70 mb-1 flex justify-between">
                             <span>ONDA ORIGINAL PCM</span>
                             <span>100% FIDELIDAD</span>
                         </div>
@@ -184,7 +186,7 @@
                             <div class="flex justify-between items-start">
                                 <div>
                                     <h3
-                                        class="font-arial font-bold text-slate-100 group-hover:text-cyan-300 flex items-center gap-2"
+                                        class="font-aldrich font-bold text-slate-100 group-hover:text-cyan-300 flex items-center gap-2"
                                     >
                                         WAV
                                         <span
@@ -216,7 +218,7 @@
                             <div class="flex justify-between items-start">
                                 <div>
                                     <h3
-                                        class="font-arial font-bold text-slate-100 group-hover:text-cyan-300 flex items-center gap-2"
+                                        class="font-aldrich font-bold text-slate-100 group-hover:text-cyan-300 flex items-center gap-2"
                                     >
                                         PCM / RAW
                                         <span
@@ -248,7 +250,7 @@
                             <div class="flex justify-between items-start">
                                 <div>
                                     <h3
-                                        class="font-arial font-bold text-slate-100 group-hover:text-cyan-300 flex items-center gap-2"
+                                        class="font-aldrich font-bold text-slate-100 group-hover:text-cyan-300 flex items-center gap-2"
                                     >
                                         AIFF
                                         <span
@@ -286,13 +288,15 @@
                     <!-- Section Header -->
                     <div class="mb-5 border-b border-pink-500/30 pb-3">
                         <div class="flex items-center justify-between">
-                            <span class="text-xs font-arial text-pink-400 tracking-widest uppercase">Categoría 02</span>
+                            <span class="text-xs font-aldrich text-pink-400 tracking-widest uppercase"
+                                >Categoría 02</span
+                            >
                             <span
-                                class="px-2 py-0.5 text-[10px] font-arial bg-pink-950 text-pink-300 border border-pink-500/40 rounded"
+                                class="px-2 py-0.5 text-[10px] font-aldrich bg-pink-950 text-pink-300 border border-pink-500/40 rounded"
                                 >LOSSY</span
                             >
                         </div>
-                        <h2 class="font-arial text-xl font-bold text-slate-100 mt-1 flex items-center gap-2">
+                        <h2 class="font-aldrich text-xl font-bold text-slate-100 mt-1 flex items-center gap-2">
                             <i class="fa-solid fa-bolt text-pink-400"></i>
                             COMPRESIÓN CON PÉRDIDA
                         </h2>
@@ -302,7 +306,7 @@
                         </p>
                         <button
                             onclick="openCategoryModal('lossy')"
-                            class="mt-3 text-xs font-arial text-pink-400 hover:text-pink-200 flex items-center gap-1 transition-all"
+                            class="mt-3 text-xs font-aldrich text-pink-400 hover:text-pink-200 flex items-center gap-1 transition-all"
                         >
                             <span>Ver teoría y características</span>
                             <i class="fa-solid fa-circle-arrow-right text-xs"></i>
@@ -311,7 +315,7 @@
 
                     <!-- Animated Waveform Visual Canvas -->
                     <div class="bg-slate-950/80 rounded-xl p-3 border border-slate-800 mb-5 relative overflow-hidden">
-                        <div class="text-[10px] font-arial text-pink-400/70 mb-1 flex justify-between">
+                        <div class="text-[10px] font-aldrich text-pink-400/70 mb-1 flex justify-between">
                             <span>REDUCCIÓN PSICOACÚSTICA</span>
                             <span>PESO REDUCIDO ~80%</span>
                         </div>
@@ -328,7 +332,7 @@
                             <div class="flex justify-between items-start">
                                 <div>
                                     <h3
-                                        class="font-arial font-bold text-slate-100 group-hover:text-pink-300 flex items-center gap-2"
+                                        class="font-aldrich font-bold text-slate-100 group-hover:text-pink-300 flex items-center gap-2"
                                     >
                                         MP3
                                         <span
@@ -360,7 +364,7 @@
                             <div class="flex justify-between items-start">
                                 <div>
                                     <h3
-                                        class="font-arial font-bold text-slate-100 group-hover:text-pink-300 flex items-center gap-2"
+                                        class="font-aldrich font-bold text-slate-100 group-hover:text-pink-300 flex items-center gap-2"
                                     >
                                         AAC
                                         <span
@@ -392,7 +396,7 @@
                             <div class="flex justify-between items-start">
                                 <div>
                                     <h3
-                                        class="font-arial font-bold text-slate-100 group-hover:text-pink-300 flex items-center gap-2"
+                                        class="font-aldrich font-bold text-slate-100 group-hover:text-pink-300 flex items-center gap-2"
                                     >
                                         OGG
                                         <span
@@ -424,7 +428,7 @@
                             <div class="flex justify-between items-start">
                                 <div>
                                     <h3
-                                        class="font-arial font-bold text-slate-100 group-hover:text-pink-300 flex items-center gap-2"
+                                        class="font-aldrich font-bold text-slate-100 group-hover:text-pink-300 flex items-center gap-2"
                                     >
                                         WMA
                                         <span
@@ -462,15 +466,15 @@
                     <!-- Section Header -->
                     <div class="mb-5 border-b border-purple-500/30 pb-3">
                         <div class="flex items-center justify-between">
-                            <span class="text-xs font-arial text-purple-400 tracking-widest uppercase"
+                            <span class="text-xs font-aldrich text-purple-400 tracking-widest uppercase"
                                 >Categoría 03</span
                             >
                             <span
-                                class="px-2 py-0.5 text-[10px] font-arial bg-purple-950 text-purple-300 border border-purple-500/40 rounded"
+                                class="px-2 py-0.5 text-[10px] font-aldrich bg-purple-950 text-purple-300 border border-purple-500/40 rounded"
                                 >LOSSLESS</span
                             >
                         </div>
-                        <h2 class="font-arial text-xl font-bold text-slate-100 mt-1 flex items-center gap-2">
+                        <h2 class="font-aldrich text-xl font-bold text-slate-100 mt-1 flex items-center gap-2">
                             <i class="fa-solid fa-sliders text-purple-400"></i>
                             COMPRESIÓN SIN PÉRDIDA
                         </h2>
@@ -480,7 +484,7 @@
                         </p>
                         <button
                             onclick="openCategoryModal('lossless')"
-                            class="mt-3 text-xs font-arial text-purple-400 hover:text-purple-200 flex items-center gap-1 transition-all"
+                            class="mt-3 text-xs font-aldrich text-purple-400 hover:text-purple-200 flex items-center gap-1 transition-all"
                         >
                             <span>Ver teoría y características</span>
                             <i class="fa-solid fa-circle-arrow-right text-xs"></i>
@@ -489,7 +493,7 @@
 
                     <!-- Animated Waveform Visual Canvas -->
                     <div class="bg-slate-950/80 rounded-xl p-3 border border-slate-800 mb-5 relative overflow-hidden">
-                        <div class="text-[10px] font-arial text-purple-400/70 mb-1 flex justify-between">
+                        <div class="text-[10px] font-aldrich text-purple-400/70 mb-1 flex justify-between">
                             <span>EMPAQUETADO EFICIENTE</span>
                             <span>REDUCCIÓN ~40-60%</span>
                         </div>
@@ -506,7 +510,7 @@
                             <div class="flex justify-between items-start">
                                 <div>
                                     <h3
-                                        class="font-arial font-bold text-slate-100 group-hover:text-purple-300 flex items-center gap-2"
+                                        class="font-aldrich font-bold text-slate-100 group-hover:text-purple-300 flex items-center gap-2"
                                     >
                                         FLAC
                                         <span
@@ -538,7 +542,7 @@
                             <div class="flex justify-between items-start">
                                 <div>
                                     <h3
-                                        class="font-arial font-bold text-slate-100 group-hover:text-purple-300 flex items-center gap-2"
+                                        class="font-aldrich font-bold text-slate-100 group-hover:text-purple-300 flex items-center gap-2"
                                     >
                                         ALAC
                                         <span
@@ -570,7 +574,7 @@
                             <div class="flex justify-between items-start">
                                 <div>
                                     <h3
-                                        class="font-arial font-bold text-slate-100 group-hover:text-purple-300 flex items-center gap-2"
+                                        class="font-aldrich font-bold text-slate-100 group-hover:text-purple-300 flex items-center gap-2"
                                     >
                                         APE
                                         <span
@@ -617,24 +621,24 @@
                 <div class="flex items-center gap-3 mb-4">
                     <div
                         id="modal-icon"
-                        class="w-12 h-12 rounded-xl bg-cyan-950/60 border border-cyan-500/40 flex items-center justify-center text-cyan-400 text-xl font-bold font-arial"
+                        class="w-12 h-12 rounded-xl bg-cyan-950/60 border border-cyan-500/40 flex items-center justify-center text-cyan-400 text-xl font-bold font-aldrich"
                     >
                         <i class="fa-solid fa-compact-disc"></i>
                     </div>
                     <div>
                         <span
                             id="modal-badge"
-                            class="text-[10px] font-arial px-2 py-0.5 bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 rounded"
+                            class="text-[10px] font-aldrich px-2 py-0.5 bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 rounded"
                             >FORMATO</span
                         >
-                        <h3 id="modal-title" class="text-2xl font-arial font-bold text-slate-100">Título Formato</h3>
+                        <h3 id="modal-title" class="text-2xl font-aldrich font-bold text-slate-100">Título Formato</h3>
                     </div>
                 </div>
 
                 <!-- Modal Body Info -->
                 <div class="space-y-4">
                     <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800">
-                        <h4 class="text-xs font-arial text-cyan-400 uppercase tracking-widest mb-1">
+                        <h4 class="text-xs font-aldrich text-cyan-400 uppercase tracking-widest mb-1">
                             Descripción General
                         </h4>
                         <p id="modal-description" class="text-sm text-slate-300 leading-relaxed">
@@ -644,7 +648,7 @@
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800">
-                            <h4 class="text-xs font-arial text-purple-400 uppercase tracking-widest mb-2">
+                            <h4 class="text-xs font-aldrich text-purple-400 uppercase tracking-widest mb-2">
                                 Características Clave
                             </h4>
                             <ul id="modal-features" class="space-y-1.5 text-xs text-slate-300">
@@ -656,7 +660,7 @@
                             class="bg-slate-950/60 p-4 rounded-xl border border-slate-800 flex flex-col justify-between"
                         >
                             <div>
-                                <h4 class="text-xs font-arial text-pink-400 uppercase tracking-widest mb-2">
+                                <h4 class="text-xs font-aldrich text-pink-400 uppercase tracking-widest mb-2">
                                     Uso Recomendado
                                 </h4>
                                 <p id="modal-use" class="text-xs text-slate-300">Casos de uso típicos</p>
@@ -665,14 +669,14 @@
                                 <span class="text-[11px] text-slate-500 block mb-1"
                                     >Tasa de Bits / Rango Frecuencia:</span
                                 >
-                                <span id="modal-specs" class="text-xs font-arial text-cyan-300">N/A</span>
+                                <span id="modal-specs" class="text-xs font-aldrich text-cyan-300">N/A</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- Audio Wave Visual Representation -->
                     <div class="bg-slate-950/80 p-3 rounded-xl border border-slate-800">
-                        <div class="flex justify-between items-center mb-2 text-xs font-arial text-slate-400">
+                        <div class="flex justify-between items-center mb-2 text-xs font-aldrich text-slate-400">
                             <span>SIMULACIÓN DE ESPECTRO DE FRECUENCIA</span>
                             <span id="modal-compression-ratio" class="text-cyan-400">Ratio: 1:1</span>
                         </div>
