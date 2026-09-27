@@ -3,8 +3,8 @@ tailwind.config = {
     theme: {
         extend: {
             fontFamily: {
-                arial: [Arial],
-                arial: [Arial],
+                aldrich: [Aldrich],
+                orbitron: [Orbitron],
             },
             colors: {
                 cyber: {
