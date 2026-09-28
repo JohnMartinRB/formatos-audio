@@ -65,6 +65,13 @@ body {
     box-shadow: 0 0 20px rgba(0, 240, 255, 0.25);
 }
 
+.hud-card-pink {
+    border-color: rgba(255, 0, 127, 0.3);
+}
+.hud-card-pink:hover {
+    border-color: rgba(255, 0, 127, 0.7);
+    box-shadow: 0 0 20px rgba(255, 0, 127, 0.3);
+}
 .hud-card-purple {
     border-color: rgba(112, 0, 255, 0.3);
 }
