@@ -1,3 +1,6 @@
+/* ==========================================
+    CONFIGURACIÓN DE TAILWIND CSS
+========================================== */
 tailwind.config = {
     darkMode: "class",
     theme: {
@@ -25,7 +28,10 @@ tailwind.config = {
         },
     },
 };
-// Detailed data extracted directly from user notebooks and technical audio fundamentals
+
+/* ==========================================
+    BASE DE DATOS DE CATEGORÍAS (RAW, LOSSY, LOSSLESS)
+========================================== */
 const categoryData = {
     raw: {
         title: "Sin Compresión (RAW / PCM)",
@@ -77,6 +83,9 @@ const categoryData = {
     },
 };
 
+/* ==========================================
+    BASE DE DATOS DE FORMATOS INDIVIDUALES
+========================================== */
 const formatData = {
     wav: {
         title: "WAV (Waveform Audio File Format)",
@@ -230,6 +239,9 @@ const formatData = {
     },
 };
 
+/* ==========================================
+    LÓGICA DE FILTRADO Y NAVEGACIÓN DE BOTONES
+========================================== */
 function filterCategory(cat) {
     const cols = ["raw", "lossy", "lossless"];
     const tabs = ["all", "raw", "lossy", "lossless"];
@@ -262,6 +274,9 @@ function filterCategory(cat) {
     });
 }
 
+/* ==========================================
+    MANEJO DEL MODAL Y RELLENO DE DATOS
+========================================== */
 function openCategoryModal(key) {
     const data = categoryData[key];
     if (!data) return;
@@ -320,6 +335,9 @@ function closeModal() {
     document.getElementById("modal-backdrop").classList.add("hidden");
 }
 
+/* ==========================================
+    RENDERIZADO Y ANIMACIÓN DE CANVASES (ONDAS EN TIEMPO REAL)
+========================================== */
 let animFrameId;
 
 function animateWaveforms() {
@@ -406,6 +424,9 @@ window.onload = function () {
     animateWaveforms();
 };
 
+/* ==========================================
+    INICIALIZACIÓN Y EVENTOS DEL TECLADO
+========================================== */
 // Close modal on Escape key
 document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") closeModal();

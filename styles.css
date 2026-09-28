@@ -1,3 +1,6 @@
+/* ==========================================
+    ESTILOS GENERALES Y FONDO DE PANTALLA (GRID HUD)
+========================================== */
 body {
     min-height: 100vh;
     background-image:
@@ -24,7 +27,9 @@ body {
     background-size: 40px 40px;
 }
 
-/* Custom Scrollbar */
+/* ==========================================
+    CONFIGURACIÓN Y ESTILIZACIÓN DE SCROLLBAR
+========================================== */
 ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
@@ -40,6 +45,9 @@ body {
     background: #00f0ff;
 }
 
+/* ==========================================
+    EFECTOS GLOW Y SOMBRAS NEÓN DE TECNOLOGÍA
+========================================== */
 .glow-text-cyan {
     text-shadow:
         0 0 10px rgba(0, 240, 255, 0.7),
@@ -52,6 +60,9 @@ body {
         0 0 20px rgba(112, 0, 255, 0.4);
 }
 
+/* ==========================================
+    TARJETAS INTERACTIVAS (HUD-CARD) Y BORDES POR CATEGORÍA
+========================================== */
 .hud-card {
     border: 1px solid rgba(0, 240, 255, 0.2);
     backdrop-filter: blur(12px);
@@ -80,6 +91,9 @@ body {
     box-shadow: 0 0 20px rgba(112, 0, 255, 0.3);
 }
 
+/* ==========================================
+    BORDES EN ESQUINA Y EFECTOS ANIMADOS (SCANLINES)
+========================================== */
 .corner-border {
     position: relative;
 }
@@ -116,6 +130,9 @@ body {
     animation: scanline 8s linear infinite;
 }
 
+/* ==========================================
+    TIPOGRAFÍA PERSONALIZADA Y FORMATO DE ENCABEZADOS
+========================================== */
 .main-titulo {
     font-size: 2.7rem !important;
     line-height: 1.3 !important;
@@ -144,6 +161,9 @@ body {
     font-size: 1rem !important;
 }
 
+/* ==========================================
+    ESTILOS DE TARJETAS
+========================================== */
 .categoria-numero {
     font-size: 0.9rem !important;
     line-height: 1.5 !important;
@@ -193,6 +213,9 @@ body {
     font-size: 1.2rem !important;
 }
 
+/* ==========================================
+    ESTILOS Y REGLAS RESPONSIVAS DEL MODAL Y CANVAS
+========================================== */
 .modal {
     width: 100% !important;
     max-width: 65% !important;

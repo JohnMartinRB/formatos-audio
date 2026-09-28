@@ -1,5 +1,8 @@
 <!doctype html>
 <html lang="es" class="dark">
+    <!-- ==========================================
+        HEAD Y CONFIGURACIÓN INICIAL
+    ========================================== -->
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,6 +20,9 @@
         <script src="script.js" defer></script>
     </head>
     <body class="hud-grid relative overflow-x-hidden p-3 md:p-6 text-slate-200">
+        <!-- ==========================================
+            HEADER Y DATOS PERSONALES / DEL TRABAJO
+        ========================================== -->
         <header class="max-w-7xl mx-auto mb-8 relative z-10">
             <!-- Top HUD Row with Info & Main Title -->
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center mb-6">
@@ -100,6 +106,9 @@
                 </div>
             </div>
 
+            <!-- ==========================================
+                BARRA DE NAVEGACIÓN Y FILTROS
+            ========================================== -->
             <!-- Filter Navigation Buttons -->
             <div class="flex flex-wrap justify-center gap-2 md:gap-4 mt-4">
                 <button
@@ -135,6 +144,9 @@
 
         <main class="max-w-7xl mx-auto relative z-10 mb-12">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- ==========================================
+                    TARJETA CATEGORÍA 01 (SIN COMPRESIÓN / RAW)
+                ========================================== -->
                 <!-- COLUMN 1: SIN COMPRESIÓN -->
                 <div id="col-raw" class="hud-card rounded-2xl p-5 relative overflow-hidden transition-all duration-500">
                     <!-- Glowing corner marker -->
@@ -287,6 +299,9 @@
                     </div>
                 </div>
 
+                <!-- ==========================================
+                    TARJETA CATEGORÍA 02 (COMPRESIÓN CON PÉRDIDA / LOSSY)
+                ========================================== -->
                 <!-- COLUMN 2: CON COMPRESIÓN - CON PÉRDIDA -->
                 <div
                     id="col-lossy"
@@ -475,6 +490,9 @@
                     </div>
                 </div>
 
+                <!-- ==========================================
+                    TARJETA CATEGORÍA 03 (COMPRESIÓN SIN PÉRDIDA / LOSSLESS)
+                ========================================== -->
                 <!-- COLUMN 3: CON COMPRESIÓN - SIN PÉRDIDA -->
                 <div
                     id="col-lossless"
@@ -633,6 +651,9 @@
             </div>
         </main>
 
+        <!-- ==========================================
+            MODAL INTERACTIVO DE DETALLES Y TEORÍA
+        ========================================== -->
         <div
             id="modal-backdrop"
             class="fixed inset-0 bg-slate-950/80 backdrop-blur-md z-50 hidden flex items-center justify-center p-4 transition-opacity duration-300"
