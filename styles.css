@@ -118,6 +118,7 @@ body {
     font-size: 1.2rem !important;
     line-height: 1.3 !important;
 }
+
 .datos-titulo {
     font-size: 1rem !important;
     line-height: 1.2 !important;
@@ -142,6 +143,11 @@ body {
     font-size: 0.9rem !important;
     line-height: 1.5 !important;
 }
+
+.titulo-tarjeta {
+    font-size: 1.4rem !important;
+    line-height: 2.5 !important;
+}
 .formato-etiqueta-superior {
     border-radius: 0.7rem !important;
     font-size: 0.9rem !important;
@@ -151,7 +157,26 @@ body {
     font-size: 1rem !important;
     line-height: 1.5 !important;
 }
-.titulo-tarjeta {
-    font-size: 1.4rem !important;
-    line-height: 2.5 !important;
+
+.grafico-texto {
+    font-size: 0.7rem !important;
+}
+
+.titulo-tarjetita {
+    font-size: 1.2rem !important;
+    line-height: 2.2 !important;
+}
+.formato-etiquetita-superior {
+    border-radius: 0.6rem !important;
+    font-size: 0.7rem !important;
+    font-family: "Orbitron" !important;
+    text-transform: uppercase !important;
+}
+.definicion-pequeña {
+    font-size: 0.9rem !important;
+    line-height: 1.2 !important;
+}
+.caracteristica-tarjetita {
+    border-radius: 0.4rem !important;
+    font-size: 0.8rem !important;
 }
