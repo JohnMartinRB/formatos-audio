@@ -130,7 +130,9 @@ body {
     line-height: 1.2 !important;
 }
 
-.boton-categoria {
+.boton-categoria,
+.boton-categoria:hover,
+.boton-categoria:active {
     padding: 0.7rem !important;
     font-size: 1rem !important;
 }
