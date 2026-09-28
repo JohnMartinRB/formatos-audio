@@ -669,20 +669,22 @@
                 <!-- Modal Body Info -->
                 <div class="space-y-4">
                     <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800">
-                        <h4 class="text-xs font-aldrich text-cyan-400 uppercase tracking-widest mb-1">
+                        <h4 class="modal-subtitulo text-xs font-aldrich text-cyan-400 uppercase tracking-widest mb-1">
                             Descripción General
                         </h4>
-                        <p id="modal-description" class="text-sm text-slate-300 leading-relaxed">
+                        <p id="modal-description" class="modal-texto text-sm text-slate-300 leading-relaxed">
                             Descripción detallada del formato.
                         </p>
                     </div>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div class="bg-slate-950/60 p-4 rounded-xl border border-slate-800">
-                            <h4 class="text-xs font-aldrich text-purple-400 uppercase tracking-widest mb-2">
+                            <h4
+                                class="modal-subtitulo text-xs font-aldrich text-purple-400 uppercase tracking-widest mb-2"
+                            >
                                 Características Clave
                             </h4>
-                            <ul id="modal-features" class="space-y-1.5 text-xs text-slate-300">
+                            <ul id="modal-features" class="modal-texto space-y-1.5 text-xs text-slate-300">
                                 <!-- JS Inject -->
                             </ul>
                         </div>
@@ -691,16 +693,18 @@
                             class="bg-slate-950/60 p-4 rounded-xl border border-slate-800 flex flex-col justify-between"
                         >
                             <div>
-                                <h4 class="text-xs font-aldrich text-pink-400 uppercase tracking-widest mb-2">
+                                <h4
+                                    class="modal-subtitulo text-xs font-aldrich text-pink-400 uppercase tracking-widest mb-2"
+                                >
                                     Uso Recomendado
                                 </h4>
-                                <p id="modal-use" class="text-xs text-slate-300">Casos de uso típicos</p>
+                                <p id="modal-use" class="modal-texto text-xs text-slate-300">Casos de uso típicos</p>
                             </div>
                             <div class="mt-4 pt-3 border-t border-slate-800/80">
-                                <span class="text-[11px] text-slate-500 block mb-1"
+                                <span class="modal-subtitulo text-[11px] text-slate-500 block mb-1"
                                     >Tasa de Bits / Rango Frecuencia:</span
                                 >
-                                <span id="modal-specs" class="text-xs font-aldrich text-cyan-300">N/A</span>
+                                <span id="modal-specs" class="modal-texto text-xs font-aldrich text-cyan-300">N/A</span>
                             </div>
                         </div>
                     </div>
@@ -708,8 +712,8 @@
                     <!-- Audio Wave Visual Representation -->
                     <div class="bg-slate-950/80 p-3 rounded-xl border border-slate-800">
                         <div class="flex justify-between items-center mb-2 text-xs font-aldrich text-slate-400">
-                            <span>SIMULACIÓN DE ESPECTRO DE FRECUENCIA</span>
-                            <span id="modal-compression-ratio" class="text-cyan-400">Ratio: 1:1</span>
+                            <span class="modal-subtitulo">SIMULACIÓN DE ESPECTRO DE FRECUENCIA</span>
+                            <span id="modal-compression-ratio" class="modal-texto text-cyan-400">Ratio: 1:1</span>
                         </div>
                         <canvas id="modal-canvas" class="w-full h-20 bg-slate-900/60 rounded"></canvas>
                     </div>

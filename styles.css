@@ -190,12 +190,20 @@ body {
     font-size: 0.8rem !important;
 }
 .fa-magnifying-glass-plus {
-    font-size: 1.2rem;
+    font-size: 1.2rem !important;
 }
 
 .modal {
-    width: 100%;
-    max-width: 65%;
-    height: 100%;
-    max-height: 90%;
+    width: 100% !important;
+    max-width: 65% !important;
+    height: 100% !important;
+    max-height: 90% !important;
+}
+.modal-subtitulo {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+}
+.modal-texto {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
 }
