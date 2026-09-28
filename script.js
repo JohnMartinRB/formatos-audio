@@ -251,7 +251,7 @@ function filterCategory(cat) {
         const btn = document.getElementById(`tab-${t}`);
         if (btn) {
             btn.className =
-                "px-4 py-1.5 rounded-full font-aldrich tracking-wider transition-all bg-slate-900/80 text-slate-400 border border-slate-700 hover:border-cyan-500";
+                "min-w-[110px] text-center px-4 py-1.5 rounded-full font-aldrich tracking-wider transition-all bg-slate-900/80 text-slate-400 border border-slate-700 hover:border-cyan-500";
         }
     });
 
@@ -259,7 +259,7 @@ function filterCategory(cat) {
     const activeBtn = document.getElementById(`tab-${cat}`);
     if (activeBtn) {
         activeBtn.className =
-            "px-4 py-1.5 rounded-full font-aldrich tracking-wider transition-all bg-cyan-500/20 text-cyan-300 border border-cyan-400 shadow-neon-cyan";
+            "min-w-[110px] text-center px-4 py-1.5 rounded-full font-aldrich tracking-wider transition-all bg-cyan-500/20 text-cyan-300 border border-cyan-400 shadow-neon-cyan";
     }
 
     // Show/Hide Grid columns
