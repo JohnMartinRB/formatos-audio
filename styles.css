@@ -199,6 +199,9 @@ body {
     height: 100% !important;
     max-height: 90% !important;
 }
+.modal-titulo {
+    font-size: 1.8rem !important;
+}
 .modal-subtitulo {
     font-size: 0.9rem !important;
     line-height: 1.5 !important;

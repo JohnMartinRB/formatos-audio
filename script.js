@@ -269,7 +269,7 @@ function openCategoryModal(key) {
     document.getElementById("modal-icon").className =
         `w-12 h-12 rounded-xl bg-cyan-950/60 border border-cyan-500/40 flex items-center justify-center text-cyan-400 text-xl font-bold font-aldrich`;
     document.getElementById("modal-icon").innerHTML = `<i class="${data.icon}"></i>`;
-    document.getElementById("modal-badge").innerText = data.badge;
+    // document.getElementById("modal-badge").innerText = data.badge;
     document.getElementById("modal-title").innerText = data.title;
     document.getElementById("modal-description").innerText = data.description;
 
@@ -296,7 +296,7 @@ function openFormatModal(key) {
     document.getElementById("modal-icon").className =
         `w-12 h-12 rounded-xl bg-purple-950/60 border border-purple-500/40 flex items-center justify-center text-purple-400 text-xl font-bold font-aldrich`;
     document.getElementById("modal-icon").innerHTML = `<i class="${data.icon}"></i>`;
-    document.getElementById("modal-badge").innerText = data.badge;
+    // document.getElementById("modal-badge").innerText = data.badge;
     document.getElementById("modal-title").innerText = data.title;
     document.getElementById("modal-description").innerText = data.description;
 
