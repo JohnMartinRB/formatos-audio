@@ -3,8 +3,8 @@ tailwind.config = {
     theme: {
         extend: {
             fontFamily: {
-                aldrich: [Aldrich],
-                orbitron: [Orbitron],
+                aldrich: ["Aldrich"],
+                orbitron: ["Orbitron"],
             },
             colors: {
                 cyber: {
@@ -141,7 +141,7 @@ const formatData = {
     aac: {
         title: "AAC (Advanced Audio Coding)",
         badge: "Lossy Moderno",
-        icon: "fa-solid fa-[#00f0ff]",
+        icon: "fa-solid fa-music",
         description:
             "Diseñado para ser el sucesor del MP3. Logra una mayor calidad de sonido que MP3 a la misma tasa de transferencia de datos gracias a filtros más eficientes.",
         features: [
