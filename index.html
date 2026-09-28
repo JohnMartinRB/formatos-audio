@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Formatos de Audio - Infografía Interactiva</title>
+        <title>Formatos de Audio: Infografía Interactiva - Juan Rodríguez 5° B</title>
         <link rel="icon" type="image/png" href="favicon.png" />
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
@@ -144,25 +144,27 @@
                     <!-- Section Header -->
                     <div class="mb-5 border-b border-cyan-500/30 pb-3">
                         <div class="flex items-center justify-between">
-                            <span class="text-xs font-aldrich text-cyan-400 tracking-widest uppercase"
+                            <span class="categoria-numero text-xs font-aldrich text-cyan-400 tracking-widest uppercase"
                                 >Categoría 01</span
                             >
                             <span
-                                class="px-2 py-0.5 text-[10px] font-aldrich bg-cyan-950 text-cyan-300 border border-cyan-500/40 rounded"
+                                class="formato-etiqueta-superior px-2 py-0.5 text-[10px] font-aldrich bg-cyan-950 text-cyan-300 border border-cyan-500/40 rounded"
                                 >RAW / PCM</span
                             >
                         </div>
-                        <h2 class="font-aldrich text-xl font-bold text-slate-100 mt-1 flex items-center gap-2">
+                        <h2
+                            class="titulo-tarjeta font-aldrich text-xl font-bold text-slate-100 mt-1 flex items-center gap-2"
+                        >
                             <i class="fa-solid fa-wave-square text-cyan-400"></i>
                             SIN COMPRESIÓN
                         </h2>
-                        <p class="text-xs text-slate-400 mt-2 line-clamp-2">
+                        <p class="definicion-resumida text-xs text-slate-400 mt-2">
                             Representación digital directa por muestreo y cuantificación (PCM), guardando la onda
                             capturada sin algoritmos de reducción.
                         </p>
                         <button
                             onclick="openCategoryModal('raw')"
-                            class="mt-3 text-xs font-aldrich text-cyan-400 hover:text-cyan-200 flex items-center gap-1 transition-all"
+                            class="ver-teoria mt-3 text-xs font-aldrich text-cyan-400 hover:text-cyan-200 flex items-center gap-1 transition-all"
                         >
                             <span>Ver teoría y características</span>
                             <i class="fa-solid fa-circle-arrow-right text-xs"></i>
@@ -290,25 +292,27 @@
                     <!-- Section Header -->
                     <div class="mb-5 border-b border-pink-500/30 pb-3">
                         <div class="flex items-center justify-between">
-                            <span class="text-xs font-aldrich text-pink-400 tracking-widest uppercase"
+                            <span class="categoria-numero text-xs font-aldrich text-pink-400 tracking-widest uppercase"
                                 >Categoría 02</span
                             >
                             <span
-                                class="px-2 py-0.5 text-[10px] font-aldrich bg-pink-950 text-pink-300 border border-pink-500/40 rounded"
+                                class="formato-etiqueta-superior px-2 py-0.5 text-[10px] font-aldrich bg-pink-950 text-pink-300 border border-pink-500/40 rounded"
                                 >LOSSY</span
                             >
                         </div>
-                        <h2 class="font-aldrich text-xl font-bold text-slate-100 mt-1 flex items-center gap-2">
+                        <h2
+                            class="titulo-tarjeta font-aldrich text-xl font-bold text-slate-100 mt-1 flex items-center gap-2"
+                        >
                             <i class="fa-solid fa-bolt text-pink-400"></i>
                             COMPRESIÓN CON PÉRDIDA
                         </h2>
-                        <p class="text-xs text-slate-400 mt-2 line-clamp-2">
+                        <p class="definicion-resumida text-xs text-slate-400 mt-2">
                             Elimina permanentemente datos inaudibles mediante modelos psicoacústicos para obtener máxima
                             reducción de peso.
                         </p>
                         <button
                             onclick="openCategoryModal('lossy')"
-                            class="mt-3 text-xs font-aldrich text-pink-400 hover:text-pink-200 flex items-center gap-1 transition-all"
+                            class="ver-teoria mt-3 text-xs font-aldrich text-pink-400 hover:text-pink-200 flex items-center gap-1 transition-all"
                         >
                             <span>Ver teoría y características</span>
                             <i class="fa-solid fa-circle-arrow-right text-xs"></i>
@@ -468,25 +472,28 @@
                     <!-- Section Header -->
                     <div class="mb-5 border-b border-purple-500/30 pb-3">
                         <div class="flex items-center justify-between">
-                            <span class="text-xs font-aldrich text-purple-400 tracking-widest uppercase"
+                            <span
+                                class="categoria-numero text-xs font-aldrich text-purple-400 tracking-widest uppercase"
                                 >Categoría 03</span
                             >
                             <span
-                                class="px-2 py-0.5 text-[10px] font-aldrich bg-purple-950 text-purple-300 border border-purple-500/40 rounded"
+                                class="formato-etiqueta-superior px-2 py-0.5 text-[10px] font-aldrich bg-purple-950 text-purple-300 border border-purple-500/40 rounded"
                                 >LOSSLESS</span
                             >
                         </div>
-                        <h2 class="font-aldrich text-xl font-bold text-slate-100 mt-1 flex items-center gap-2">
+                        <h2
+                            class="titulo-tarjeta font-aldrich text-xl font-bold text-slate-100 mt-1 flex items-center gap-2"
+                        >
                             <i class="fa-solid fa-sliders text-purple-400"></i>
                             COMPRESIÓN SIN PÉRDIDA
                         </h2>
-                        <p class="text-xs text-slate-400 mt-2 line-clamp-2">
+                        <p class="definicion-resumida text-xs text-slate-400 mt-2">
                             Reestructura la información binaria mediante algoritmos eficientes reduciendo el peso sin
                             alterar la señal original.
                         </p>
                         <button
                             onclick="openCategoryModal('lossless')"
-                            class="mt-3 text-xs font-aldrich text-purple-400 hover:text-purple-200 flex items-center gap-1 transition-all"
+                            class="ver-teoria mt-3 text-xs font-aldrich text-purple-400 hover:text-purple-200 flex items-center gap-1 transition-all"
                         >
                             <span>Ver teoría y características</span>
                             <i class="fa-solid fa-circle-arrow-right text-xs"></i>
